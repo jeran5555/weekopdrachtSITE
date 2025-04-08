@@ -2,7 +2,7 @@
     <div class="bovenbalk">
         <div class="bovenlinks">
 
-        <img src="assets/img/cart5.svg" alt="Winkelmandje" class="cart9" onclick="winkelWagenAdd()">
+            <img src="assets/img/cart5.svg" alt="Winkelmandje" class="cart9" onclick="winkelWagenAdd()">
 
 
             <div>Taal:</div>
@@ -13,7 +13,7 @@
             </select>
         </div>
 
-        
+
         <img src="assets/img/uncd.png" alt="Logo" class="logo1">
 
         <div class="bovenrechts">

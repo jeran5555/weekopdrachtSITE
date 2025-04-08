@@ -6,8 +6,8 @@
 
         <div data-role="main" class="ui-content">
             <form method="post" action="/action_page_post.php">
-                
-                
+
+
                 <div data-role="rangeslider">
                     <label for="price-min">Price:</label>
                     <input type="range" name="price-min" id="price-min" value="200" min="0" max="10000">
@@ -17,7 +17,7 @@
 
                 <br><br>
 
-                
+
                 <label>Categories:</label><br>
                 <input type="checkbox" name="category[]" value="jackets"> Jackets<br>
                 <input type="checkbox" name="category[]" value="hoodies"> Hoodies<br>
@@ -26,7 +26,7 @@
 
                 <br>
 
-                
+
                 <label>Size:</label><br>
                 <input type="checkbox" name="size[]" value="S"> S<br>
                 <input type="checkbox" name="size[]" value="M"> M<br>
@@ -35,7 +35,7 @@
 
                 <br>
 
-               
+
                 <label for="brand">Brand:</label><br>
                 <select name="brand" id="brand">
                     <option value="">-- Select a brand --</option>
@@ -48,7 +48,7 @@
 
                 <br><br>
 
-                
+
                 <label>Color:</label><br>
                 <input type="checkbox" name="color[]" value="black"> Black<br>
                 <input type="checkbox" name="color[]" value="white"> White<br>

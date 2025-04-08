@@ -9,14 +9,14 @@
 </head>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const products = document.querySelectorAll('.product');
-    products.forEach((product, index) => {
-      setTimeout(() => {
-        product.classList.add('visible');
-      }, index * 100); 
+    document.addEventListener("DOMContentLoaded", function() {
+        const products = document.querySelectorAll('.product');
+        products.forEach((product, index) => {
+            setTimeout(() => {
+                product.classList.add('visible');
+            }, index * 100);
+        });
     });
-  });
 </script>
 
 

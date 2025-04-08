@@ -1,4 +1,4 @@
-<?php          
+<?php
 $products = [
     ["title" => "14th Addiction Cross Zip", "price" => "€1300", "image" => "assets/img/14th.jpeg"],
     ["title" => "Balenciaga Hooded Bomber", "price" => "€3700", "image" => "assets/img/balenci.webp"],
@@ -21,24 +21,33 @@ $products = [
     ["title" => "Balenciaga runner", "price" => "900$", "image" => "assets/img/runnerwit.avif"],
     ["title" => "Rick owens boots", "price" => "450$", "image" => "assets/img/rickboots.jpg"],
     ["title" => "Balenciaga bulldozer boots", "price" => "1500$", "image" => "assets/img/bulldozer.avif"],
-               
 ];
-                  
-?>
 
-<div class="products">
-    <?php foreach ($products as $product) : ?>
-        <div class="product">
-            <img src="<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['title']) ?>" class="product-image">
-            <div class="onder">
-                <div class="onderlinks">
-                    <div class="title"><?= htmlspecialchars($product['title']) ?></div>
-                    <div class="geld"><?= htmlspecialchars($product['price']) ?></div>
-                </div>
-                <div class="cart5">
-                    <img src="assets/img/cart5.svg" onclick="winkelWagenAdd()" alt="cart5" class="cart5">
-                </div>
-            </div>
-        </div>
-    <?php endforeach; ?>
-</div>
+echo '<div class="products">';
+foreach ($products as $index => $product) {
+    echo '<a href="product.php?id=' . $index . '" class="product-link">';
+    echo    '<div class="product">';
+    echo        '<img src="' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['title']) . '" class="product-image">';
+    echo        '<div class="onder">';
+    echo            '<div class="onderlinks">';
+    echo                '<div class="title">' . htmlspecialchars($product['title']) . '</div>';
+    echo                '<div class="geld">' . htmlspecialchars($product['price']) . '</div>';
+    echo            '</div>';
+    echo            '<div class="cart5">';
+    echo                '<img src="assets/img/cart5.svg" onclick="event.preventDefault(); winkelWagenAdd();" alt="cart5" class="cart5">';
+    echo            '</div>';
+    echo        '</div>';
+    echo    '</div>';
+    echo '</a>';
+}
+echo '</div>';
+
+
+
+echo '<div class="product">';
+echo '  <a href="product.php?id=' . $index . '" class="product-link">';
+echo '    <img src="' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['title']) . '" class="product-image">';
+echo '  </a>';
+// ... rest of the product HTML
+echo '</div>';
+?>
