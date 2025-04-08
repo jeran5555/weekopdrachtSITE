@@ -1,6 +1,10 @@
 <header>
     <div class="bovenbalk">
         <div class="bovenlinks">
+
+        <img src="assets/img/cart5.svg" alt="Winkelmandje" class="cart9" onclick="winkelWagenAdd()">
+
+
             <div>Taal:</div>
             <select name="taal" id="taal">
                 <option value="nl">Nederlands</option>

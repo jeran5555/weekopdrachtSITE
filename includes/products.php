@@ -1,4 +1,4 @@
-<?php          //producten................
+<?php          
 $products = [
     ["title" => "14th Addiction Cross Zip", "price" => "€1300", "image" => "assets/img/14th.jpeg"],
     ["title" => "Balenciaga Hooded Bomber", "price" => "€3700", "image" => "assets/img/balenci.webp"],
@@ -23,7 +23,7 @@ $products = [
     ["title" => "Balenciaga bulldozer boots", "price" => "1500$", "image" => "assets/img/bulldozer.avif"],
                
 ];
-                  //producten................
+                  
 ?>
 
 <div class="products">

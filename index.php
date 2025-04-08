@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const products = document.querySelectorAll('.product');
+    products.forEach((product, index) => {
+      setTimeout(() => {
+        product.classList.add('visible');
+      }, index * 100); 
+    });
+  });
+</script>
+
+
 <body>
 
     <div id="container">
