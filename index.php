@@ -28,6 +28,8 @@
         </header>
 
         <main>
+
+        
             <?php include 'includes/sidebar.php'; ?>
             <?php include 'includes/products.php'; ?>
         </main>

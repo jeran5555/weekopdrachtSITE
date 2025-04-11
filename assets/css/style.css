@@ -109,3 +109,7 @@ footer {
     color: rgb(160, 164, 190);
 
 }
+
+body {
+    overflow-x: hidden;
+}

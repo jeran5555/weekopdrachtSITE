@@ -24,30 +24,23 @@ $products = [
 ];
 
 echo '<div class="products">';
+
 foreach ($products as $index => $product) {
-    echo '<a href="product.php?id=' . $index . '" class="product-link">';
-    echo    '<div class="product">';
-    echo        '<img src="' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['title']) . '" class="product-image">';
-    echo        '<div class="onder">';
-    echo            '<div class="onderlinks">';
-    echo                '<div class="title">' . htmlspecialchars($product['title']) . '</div>';
-    echo                '<div class="geld">' . htmlspecialchars($product['price']) . '</div>';
-    echo            '</div>';
-    echo            '<div class="cart5">';
-    echo                '<img src="assets/img/cart5.svg" onclick="event.preventDefault(); winkelWagenAdd();" alt="cart5" class="cart5">';
-    echo            '</div>';
-    echo        '</div>';
-    echo    '</div>';
-    echo '</a>';
+    echo '<div class="product">';
+    echo '  <a href="product.php?id=' . $index . '" class="product-link">';
+    echo '    <img src="' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['title']) . '" class="product-image">';
+    echo '    <div class="onder">';
+    echo '      <div class="onderlinks">';
+    echo '        <div class="title">' . htmlspecialchars($product['title']) . '</div>';
+    echo '        <div class="geld">' . htmlspecialchars($product['price']) . '</div>';
+    echo '      </div>';
+    echo '      <div class="cart5">';
+    echo '        <img src="assets/img/cart5.svg" onclick="event.preventDefault(); winkelWagenAdd();" alt="cart5" class="cart5">';
+    echo '      </div>';
+    echo '    </div>';
+    echo '  </a>';
+    echo '</div>';
 }
-echo '</div>';
 
-
-
-echo '<div class="product">';
-echo '  <a href="product.php?id=' . $index . '" class="product-link">';
-echo '    <img src="' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['title']) . '" class="product-image">';
-echo '  </a>';
-// ... rest of the product HTML
 echo '</div>';
 ?>
